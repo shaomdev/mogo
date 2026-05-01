@@ -1036,7 +1036,10 @@ hr {
 }
 
 .footer__social-content {
+  display: flex;
+  list-style-type: none;
   padding-top: 15px;
+  padding-left: 0;
   font-size: 15px;
   font-style: italic;
   font-weight: 300;
