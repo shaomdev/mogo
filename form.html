@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отправки</title>
+</head>
+<body>
+    <form class="feedback-form" action="/" method="POST">
+        <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__title">Форма обратной связи</legend>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="name">Имя:</label> 
+                <input class="feedback-form__input" type="text" name="username" id="name" required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="email">Почта:</label>
+                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите вашу почту..." required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="tel">Телефон:</label>
+                <input class="feedback-form__input" type="tel" name="tel" id="tel" placeholder="Введите ваш телефон..." required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="message">Сообщение:</label>
+                <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Введите ваше сообщение..." required></textarea>
+            </div>
+
+            <button class="feedback-form__submit" type="submit">Отправить</button>
+        </fieldset>
+    </form>
+</body>
+</html>
