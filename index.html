@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css/style.css" />
+    <link rel="stylesheet" href="main.css/form.css">
     <link
       href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap&subset=cyrillic-ext"
       rel="stylesheet"
@@ -33,7 +34,7 @@
             <a class="nav__link" href="#" data-scroll="#services">Service</a>
             <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
             <a class="nav__link" href="#" data-scroll="#works">Work</a>
-            <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
+            <a class="nav__link nav__link--contact" href="#">Contact</a>
             <a class="nav__link" href="#">
               <i class="fas fa-shopping-cart"></i>
             </a>
@@ -1010,6 +1011,40 @@
     </div>
     <!-- /.page -->
 
+    <div class="modal" id="contactModal">
+      <div class="modal__content">
+        <button class="modal__close" id="closeModal">&times;</button>
+        <form class="feedback-form" action="/" method="POST">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__title">Форма обратной связи</legend>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="name">Имя:</label> 
+                <input class="feedback-form__input" type="text" name="username" id="name" placeholder="Введите ваше имя..." required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="email">Почта:</label>
+                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите вашу почту..." required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="tel">Телефон:</label>
+                <input class="feedback-form__input" type="tel" name="tel" id="tel" placeholder="Введите ваш телефон..." required>
+            </div>
+
+            <div class="feedback-form__group">
+                <label class="feedback-form__label" for="message">Сообщение:</label>
+                <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Введите ваше сообщение..." required></textarea>
+            </div>
+
+            <button class="feedback-form__submit" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       type="text/javascript"

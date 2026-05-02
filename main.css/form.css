@@ -1,22 +1,17 @@
-/* 1. Базовые настройки страницы */
-body {
-    background: linear-gradient(135deg, #f38181, #fce38a);
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
 /* 2. Контейнер формы */
 .feedback-form {
-    background: #fff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     width: 100%;
     max-width: 600px;
+    background: linear-gradient(135deg, #f38181, #fce38a);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: 0;
 }
 
 .feedback-form__fieldset {
@@ -44,7 +39,7 @@ body {
     display: block;
     font-size: 12px;
     font-weight: 600;
-    color: #999;
+    color: #000;
     text-transform: uppercase;
     margin-bottom: 6px;
     transition: color 0.3s;
@@ -105,4 +100,43 @@ body {
 /* Эффект нажатия (кнопка чуть проседает) */
 .feedback-form__submit:active {
     transform: scale(0.98);
+}
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal--open {
+    display: flex; /* Показываем, когда добавлен этот класс */
+}
+
+.modal__content {
+    position: relative;
+    animation: fadeIn 0.3s ease; /* Добавим плавности */
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
