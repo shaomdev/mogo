@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css/style.css" />
-    <link rel="stylesheet" href="main.css/form.css">
+    <link rel="stylesheet" href="main.css/form.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap&subset=cyrillic-ext"
       rel="stylesheet"
@@ -35,11 +35,25 @@
             <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
             <a class="nav__link" href="#" data-scroll="#works">Work</a>
             <a class="nav__link nav__link--contact" href="#">Contact</a>
-            <a class="nav__link" href="#">
+            <!-- <a class="nav__link" href="#">
               <i class="fas fa-shopping-cart"></i>
-            </a>
+            </a> -->
+
+            <div class="cart">
+              <a class="nav__link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <!-- Та самая плашка -->
+              <div class="cart__dropdown">Ваша корзина пуста</div>
+            </div>
+
             <div class="search" id="searchWrap">
-              <input type="text" name="text" class="search__input" placeholder="Search...">
+              <input
+                type="text"
+                name="text"
+                class="search__input"
+                placeholder="Search..."
+              />
               <button class="search__btn" id="searchBtn" type="button">
                 <i class="fas fa-search"></i>
               </button>
@@ -435,16 +449,40 @@
                 </div>
                 <div class="card__text">
                   <div class="social">
-                    <a class="social__item" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="social__item" href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      aria-label="Twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="social__item" href="#" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      aria-label="Pinterest"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-pinterest-p"></i>
                     </a>
-                    <a class="social__item" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -464,16 +502,40 @@
                 </div>
                 <div class="card__text">
                   <div class="social">
-                    <a class="social__item" href="#" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      aria-label="Facebook"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      aria-label="Twitter"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" aria-label="Pinterest" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      aria-label="Pinterest"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-pinterest-p"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      aria-label="Instagram"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -493,16 +555,40 @@
                 </div>
                 <div class="card__text">
                   <div class="social">
-                    <a class="social__item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Pinterest"
+                    >
                       <i class="fab fa-pinterest-p"></i>
                     </a>
-                    <a class="social__item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      class="social__item"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -842,7 +928,12 @@
           <div class="map">
             <h2 class="map__title">
               <div><i class="fas fa-map-marker-alt"></i></div>
-              <a href="https://goo.gl/maps/9vmLqH3SVzzRVGGJA" target="_blank" rel="noopener noreferrer">Open Map</a>
+              <a
+                href="https://goo.gl/maps/9vmLqH3SVzzRVGGJA"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Map</a
+              >
             </h2>
           </div>
         </div>
@@ -865,42 +956,82 @@
                 <ul class="footer__social-content">
                   Follow Us:
                   <li>
-                    <a href="#" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Facebook"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Twitter"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Instagram"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Pinterest" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Pinterest"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-pinterest-p"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Google" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Google"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-google-plus-g"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="YouTube"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-youtube"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Dribbble" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Dribbble"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-dribbble"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank" aria-label="Tumblr" rel="noopener noreferrer">
+                    <a
+                      href="#"
+                      target="_blank"
+                      aria-label="Tumblr"
+                      rel="noopener noreferrer"
+                    >
                       <i class="fab fa-tumblr"></i>
                     </a>
                   </li>
@@ -972,31 +1103,85 @@
               <div class="footer__title">Instagram</div>
 
               <div class="instagram">
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/1.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/2.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/3.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/4.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/5.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/6.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/7.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/8.jpg" alt="" />
                 </a>
-                <a class="instagram__item" href="#" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                <a
+                  class="instagram__item"
+                  href="#"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer"
+                >
                   <img src="./images/instagram/9.jpg" alt="" />
                 </a>
               </div>
@@ -1022,26 +1207,57 @@
             <legend class="feedback-form__title">Форма обратной связи</legend>
 
             <div class="feedback-form__group">
-                <label class="feedback-form__label" for="name">Имя:</label> 
-                <input class="feedback-form__input" type="text" name="username" id="name" placeholder="Введите ваше имя..." required>
+              <label class="feedback-form__label" for="name">Имя:</label>
+              <input
+                class="feedback-form__input"
+                type="text"
+                name="username"
+                id="name"
+                placeholder="Введите ваше имя..."
+                required
+              />
             </div>
 
             <div class="feedback-form__group">
-                <label class="feedback-form__label" for="email">Почта:</label>
-                <input class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите вашу почту..." required>
+              <label class="feedback-form__label" for="email">Почта:</label>
+              <input
+                class="feedback-form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Введите вашу почту..."
+                required
+              />
             </div>
 
             <div class="feedback-form__group">
-                <label class="feedback-form__label" for="tel">Телефон:</label>
-                <input class="feedback-form__input" type="tel" name="tel" id="tel" placeholder="Введите ваш телефон..." required>
+              <label class="feedback-form__label" for="tel">Телефон:</label>
+              <input
+                class="feedback-form__input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Введите ваш телефон..."
+                required
+              />
             </div>
 
             <div class="feedback-form__group">
-                <label class="feedback-form__label" for="message">Сообщение:</label>
-                <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Введите ваше сообщение..." required></textarea>
+              <label class="feedback-form__label" for="message"
+                >Сообщение:</label
+              >
+              <textarea
+                class="feedback-form__textarea"
+                name="message"
+                id="message"
+                placeholder="Введите ваше сообщение..."
+                required
+              ></textarea>
             </div>
 
-            <button class="feedback-form__submit" type="submit">Отправить</button>
+            <button class="feedback-form__submit" type="submit">
+              Отправить
+            </button>
           </fieldset>
         </form>
       </div>

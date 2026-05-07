@@ -116,6 +116,59 @@ h6 {
   opacity: 1;
 }
 
+/* Плашка для корзины */
+.cart {
+  position: relative; /* Чтобы плашка позиционировалась относительно корзины */
+  display: inline-block;
+}
+
+.cart__dropdown {
+  display: none; /* Скрыто по умолчанию */
+  position: absolute;
+  top: 100%; /* Появляется строго под корзиной */
+  right: 0;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin-top: 10px;
+  z-index: 100;
+  animation: slideUp 0.3s ease; /* Плавное появление */
+}
+
+/* Треугольник сверху плашки (необязательно, но стильно) */
+.cart__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 50px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+/* Показываем при наведении */
+.cart:hover .cart__dropdown {
+  display: block;
+}
+
+/* Анимация "выплывания" */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* иконка поиска */
 .search {
   display: inline-block;
